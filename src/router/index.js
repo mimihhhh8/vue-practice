@@ -5,6 +5,7 @@ const Index = () => import('@/pages/index')
 const Home = () => import('@/pages/home')
 const NotFound = () => import('@/pages/404')
 const Errorhandler = () => import('@/pages/errorhandler/errorhandler.vue')
+const vIf = () => import('@/pages/vue指令/v-if&v-for')
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +25,11 @@ export default new Router({
           path: '/errorhandler',
           name: 'Errorhandler',
           component: Errorhandler
+        },
+        {
+          path: '/vif',
+          name: 'vIf',
+          component: vIf
         }
       ]
     },
