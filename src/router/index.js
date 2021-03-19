@@ -6,6 +6,7 @@ const Home = () => import('@/pages/home')
 const NotFound = () => import('@/pages/404')
 const Errorhandler = () => import('@/pages/errorhandler/errorhandler.vue')
 const vIf = () => import('@/pages/vue指令/v-if&v-for')
+const LazyLoad = () => import('@/pages/pratice/vue-lazyload')
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +31,11 @@ export default new Router({
           path: '/vif',
           name: 'vIf',
           component: vIf
+        },
+        {
+          path: '/lazyload',
+          name: 'LazyLoad',
+          component: LazyLoad
         }
       ]
     },

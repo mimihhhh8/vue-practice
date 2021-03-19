@@ -20,7 +20,8 @@ export default {
       previewFileUrl: require('../assets/test1.mp4'),
       urlList: [
         {label: '1、errorHandler', path: '/errorhandler'},
-        {label: '2、vue指令', path: '/vif'}
+        {label: '2、vue指令', path: '/vif'},
+        {label: '3、图片懒加载', path: '/lazyload'}
         // {label: '3、组件传值', path: '/vif'}//兄弟组件传值
       ]
     }
