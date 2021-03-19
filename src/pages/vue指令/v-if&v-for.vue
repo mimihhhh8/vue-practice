@@ -1,5 +1,5 @@
 <template>
-<!-- 未完待续。。。。。。 -->
+
   <div>
     <div style="padding:20px" v-for="(item,index) in dataList" :key="index">{{item.user}}</div>
   </div>
@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      dataList: [
+      dataList1: [
         {user: '用户1', isActive: true},
         {user: '用户2', isActive: true},
         {user: '用户3', isActive: true},
@@ -20,9 +20,9 @@ export default {
     }
   },
   computed: {
-    dataLists () {
+    dataList () {
       console.log(111111111111)
-      return this.dataList.filter(item => {
+      return this.dataList1.filter(item => {
         return item.isActive
       })
     }
