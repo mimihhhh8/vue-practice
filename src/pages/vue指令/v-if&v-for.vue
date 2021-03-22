@@ -21,7 +21,6 @@ export default {
   },
   computed: {
     dataList () {
-      console.log(111111111111)
       return this.dataList1.filter(item => {
         return item.isActive
       })
