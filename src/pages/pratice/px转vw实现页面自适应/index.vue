@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="box">
   <!--
     1、安装：https://github.com/evrone/postcss-px-to-viewport
     2、配置.postcssrc.js文件
@@ -27,6 +27,7 @@
 
     3、测试：div m-box改变屏幕大小，div大小跟着变
    -->
+    px转vw实现页面自适应测试
    <div class="m-box"></div>
 </div>
 </template>
@@ -36,9 +37,12 @@ export default {
 }
 </script>
 <style scoped lang="less">
-.m-box{
-  width: 400px;
-  height: 400px;
-  background: pink;
+.box{
+    padding: 20px;
+  .m-box{
+    width: 400px;
+    height: 400px;
+    background: pink;
+  }
 }
 </style>
