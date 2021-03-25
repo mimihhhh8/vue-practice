@@ -10,6 +10,7 @@ const vIf = () => import('@/pages/vue指令/v-if&v-for')
 const LazyLoad = () => import('@/pages/pratice/vue-lazyload')// 图片懒加载
 const CssCharacter = () => import('@/pages/pratice/css3特性')// css3特性
 const ParentChild = () => import('@/pages/pratice/父组件监听子组件生命周期')// 父组件监听子组件生命周期
+const PxToVw = () => import('@/pages/pratice/px转vw实现页面自适应')// px转vw实现页面自适应
 Vue.use(Router)
 
 export default new Router({
@@ -49,6 +50,11 @@ export default new Router({
           path: '/parentchild',
           name: 'ParentChild',
           component: ParentChild
+        },
+        {
+          path: '/pxtovw',
+          name: 'PxToVw',
+          component: PxToVw
         }
       ]
     },
