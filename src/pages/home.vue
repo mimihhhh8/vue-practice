@@ -27,7 +27,8 @@ export default {
         {label: '3、图片懒加载', path: '/lazyload'},
         {label: '4、css3特性', path: '/csscharacter'},
         {label: '5、父组件监听子组件生命周期', path: '/parentchild'},
-        {label: '6、px转vw实现页面自适应', path: '/pxtovw'}
+        {label: '6、px转vw实现页面自适应', path: '/pxtovw'},
+        {label: '6、javascript中的深拷贝和浅拷贝', path: '/copy'}
         // {label: '3、组件传值', path: '/vif'}//兄弟组件传值
       ]
     }

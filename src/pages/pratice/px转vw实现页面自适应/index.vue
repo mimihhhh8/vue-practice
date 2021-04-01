@@ -33,7 +33,25 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
 
+    }
+  },
+  mounted () {
+    this.function(666)
+  },
+  methods: {
+    // 此函数实现js千分位逗号隔开
+    function (num) {
+      const newNum = num.toString().replace(/\d+/, (n) => {
+        return n.replace(/(\d)(?=(\d{3})+$)/g, ($1) => {
+          return $1 + ','
+        })
+      })
+      return newNum
+    }
+  }
 }
 </script>
 <style scoped lang="less">
