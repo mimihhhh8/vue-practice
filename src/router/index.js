@@ -12,6 +12,7 @@ const CssCharacter = () => import('@/pages/pratice/css3特性')// css3特性
 const ParentChild = () => import('@/pages/pratice/父组件监听子组件生命周期')// 父组件监听子组件生命周期
 const PxToVw = () => import('@/pages/pratice/px转vw实现页面自适应')// px转vw实现页面自适应
 const Copy = () => import('@/pages/pratice/javascript中的深拷贝和浅拷贝')// javascript中的深拷贝和浅拷贝
+const Task = () => import('@/pages/面试/2021-5-22/宏任务微任务')
 Vue.use(Router)
 
 export default new Router({
@@ -61,6 +62,11 @@ export default new Router({
           path: '/copy',
           name: 'Copy',
           component: Copy
+        },
+        {
+          path: '/task',
+          name: 'Task',
+          component: Task
         }
       ]
     },
