@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Object.defineProperty、Proxy</title>
+  </head>
+  <body>
+    <!-- 极简版的双向绑定 -->
+
+    <!-- _Object.defineProperty -->
+    <main class="m-defineproperty">
+      <p>[Object.defineProperty]请输入:</p>
+      <input type="text" id="defineproperty-input" />
+      <p id="defineproperty-p"></p>
+    </main>
+
+    <!-- Proxy -->
+    <main class="m-proxy">
+      <p>[Proxy]请输入:</p>
+      <input type="text" id="proxy-input" />
+      <p id="proxy-p"></p>
+    </main>
+
+    <!-- Proxy测试数组 -->
+    <main>
+      <button type="button" name="button" id="btn">添加列表项</button>
+      <ul id="list" />
+    </main>
+
+
+    <script src="./Object.defineProperty.js"></script>
+    <!-- <script src="./Object.defineProperty-example.js"></script> -->
+    <!-- <script src="./Proxy.js"></script> -->
+    <!-- <script src="./Proxy-example.js"></script> -->
+    <!-- <script src="./Proxy-binding.js"></script> -->
+  </body>
+</html>

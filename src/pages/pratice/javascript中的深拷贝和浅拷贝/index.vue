@@ -18,10 +18,29 @@ export default {
     }
   },
   mounted () {
-
+    let arr = [1, 2, 2, 3, 3, 4, 5, 5]
+    this.fn2(arr)
+    console.log('this.fn2(arr)', this.fn2(arr))
   },
   methods: {
-
+    fn2 (array) {
+      debugger
+      // eslint-disable-next-line one-var
+      let n = {}, r = [], len = array.length, val, type
+      for (var i = 0; i < array.length; i++) {
+        val = array[i]
+        type = typeof val
+        console.log('n[val', n[val])
+        if (!n[val]) {
+          n[val] = [type]
+          r.push(val)
+        } else if (n[val].indexOf(type) < 0) {
+          n[val].push(type)
+          r.push(val)
+        }
+      }
+      return r
+    }
   }
 }
 </script>
