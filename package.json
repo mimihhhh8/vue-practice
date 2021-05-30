@@ -1,8 +1,8 @@
 {
-  "name": "jianzai-web",
+  "name": "vue-practice",
   "version": "0.1.1",
   "description": "vue练习",
-  "author": "LOUSANPANG",
+  "author": "gr",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
