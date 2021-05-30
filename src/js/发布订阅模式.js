@@ -79,7 +79,7 @@ corp.list = {}
 // 订阅者
 corp.on = function(key,fn){
     if(!this.list[key]){
-        this.list[key] = []
+        this.list[key] = []    
     }
     this.list[key].push(fn)
     console.log(this)
@@ -87,14 +87,16 @@ corp.on = function(key,fn){
 
 // 发布者
 corp.emit = function(){
+    // [].shift.call(arguments) 把类数组对象转为数组对象，删除并拿到arguments的第一项。
     let key = [].shift.call(arguments)
     fns = this.list[key]
 
     if(!fns || fns.length === 0){
         return false
     }
-
+ 
     fns.forEach(fn=>{
+        console.log(arguments,'arguments')
         fn.apply(this,arguments)
     })
 }

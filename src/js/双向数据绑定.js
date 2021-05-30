@@ -1,5 +1,7 @@
 // https://www.cnblogs.com/shangjun6/p/11246400.html
 
+// https://www.cnblogs.com/kidney/p/6052935.html
+
 /**
  * vue 靠的是数据劫持 和 发布者，订阅者模式
  * 数据劫持：Object.defineProperty() 这个方法
