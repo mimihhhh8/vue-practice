@@ -3,7 +3,11 @@ let express = require('express')
 let app = express()
 
 app.get('/user', (req, res) => {
-  res.json({name: 'jack', data: [{id: '111111', state: true}]})
+  res.json({
+    'message': '获取成功',
+    'state': '1',
+    'result': {'name': '工作组1', 'id': 1, 'description': '11'}
+  })
 })
 
 app.listen(3000, function () {
