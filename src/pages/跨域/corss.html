@@ -8,8 +8,9 @@
 </head>
 <body>
   <script>
+    /** Jsonp实现跨域*/
     function test(data){
-        console.log(data.name);
+        console.log(data.message);
     };
 </script>
 <script src="http://localhost:8080/jsonp?callback=test"></script>

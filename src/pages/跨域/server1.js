@@ -14,7 +14,9 @@ server.on('request', function (req, res) {
   if (urlPath === '/jsonp' && qs.callback) {
     res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'})
     var data = {
-      'name': 'Monkey'
+      'message': '获取成功',
+      'state': '1',
+      'result': {'name': '工作组1', 'id': 1, 'description': '11'}
     }
     data = JSON.stringify(data)
     var callback = qs.callback + '(' + data + ');'
