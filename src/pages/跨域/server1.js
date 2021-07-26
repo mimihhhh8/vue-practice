@@ -10,6 +10,7 @@ var server = http.createServer()
 // 通过request事件来响应request请求
 server.on('request', function (req, res) {
   var urlPath = url.parse(req.url).pathname
+  console.log('req', url.parse(req.url))
   var qs = querystring.parse(req.url.split('?')[1])
   if (urlPath === '/jsonp' && qs.callback) {
     res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'})
