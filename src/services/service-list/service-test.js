@@ -36,9 +36,15 @@ const postTest2 = params => {
   return axios.post(url, qs.stringify(params))
 }
 
+// 测试跨域
+const testCorss = params => {
+  return axios.get('/api/user')
+}
+
 export default {
   getTest,
   getTest2,
   postTest,
-  postTest2
+  postTest2,
+  testCorss
 }

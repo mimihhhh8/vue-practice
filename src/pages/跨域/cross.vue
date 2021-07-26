@@ -25,6 +25,11 @@ export default{
       console.log(xhr.response)
     }
     xhr.send()
+
+    /** axios */
+    this.$API.testCorss().then(res => {
+      console.log(res, 'res')
+    })
   }
 }
 
