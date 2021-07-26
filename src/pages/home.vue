@@ -31,6 +31,7 @@ export default {
         // {label: '6、javascript中的深拷贝和浅拷贝', path: '/copy'},
         // {label: '7、ms', path: '/task'}
         // {label: '3、组件传值', path: '/vif'}//兄弟组件传值
+        {label: '跨域', path: '/cross'}// 兄弟组件传值
       ]
     }
   },

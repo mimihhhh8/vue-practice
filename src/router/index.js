@@ -13,6 +13,7 @@ const ParentChild = () => import('@/pages/pratice/父组件监听子组件生命
 const PxToVw = () => import('@/pages/pratice/px转vw实现页面自适应')// px转vw实现页面自适应
 const Copy = () => import('@/pages/pratice/javascript中的深拷贝和浅拷贝')// javascript中的深拷贝和浅拷贝
 const Task = () => import('@/pages/ms/2021-5-22/宏任务微任务')
+const Cross = () => import('@/pages/跨域/cross')
 Vue.use(Router)
 
 export default new Router({
@@ -67,6 +68,11 @@ export default new Router({
           path: '/task',
           name: 'Task',
           component: Task
+        },
+        {
+          path: '/cross',
+          name: 'Cross',
+          component: Cross
         }
       ]
     },
