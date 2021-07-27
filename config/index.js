@@ -17,7 +17,7 @@ module.exports = {
         pathRewrite: { // 转发
             '^/api': ''
         },
-        secure: false 
+        secure: false // 如果是 https ,需要开启这个选项
     },
     },
 
