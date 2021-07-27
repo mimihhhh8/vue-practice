@@ -29,6 +29,7 @@ module.exports = {
         secure: false // 如果是 https ,需要开启这个选项
     },
     },
+    /**上面这段代码的效果就是将以/api字段起始的本地接口请求代理到了http://localhost:3000这一域名下 */
 
     // Various Dev Server settings
     host: '0.0.0.0', // can be overwritten by process.env.HOST
