@@ -12,10 +12,10 @@
      * 利用<script>的src不受同源策略约束来跨域获取数据
     */
     function test(data){
-        console.log(data.message);
+        console.log(data,'JSONP跨域成功');
     };
 </script>
-<script src="http://localhost:8080/jsonp?callback=test"></script>
+<script src="http://localhost:9000/jsonp?callback=test"></script>
 
 </body>
 </html>

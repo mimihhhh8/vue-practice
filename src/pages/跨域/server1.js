@@ -28,6 +28,6 @@ server.on('request', function (req, res) {
   }
 })
 // 监听8080端口
-server.listen('8080')
+server.listen('9000')
 // 用于提示我们服务器启动成功
-console.log('服务启动!端口8080')
+console.log('服务启动!端口9000')
