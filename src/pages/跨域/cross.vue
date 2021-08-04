@@ -25,7 +25,7 @@ export default{
      * b、send:发送请求到服务器
      */
 
-    /** 1、cors跨域实现  */
+    /** 1、跨域资源共享（cors） */
     // 配置请求头
     // let xhr = new XMLHttpRequest()
     // xhr.open('get', 'http://localhost:3000/user', true)
