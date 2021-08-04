@@ -9,9 +9,9 @@ module.exports = {
 
     /**
      * 1、首先，在ProxyTable模块中设置了‘/api’，target中设置服务器地址，
-     * 也就是接口的开头那段地址，例如http://localhost:54321/，然后
+     * 也就是接口的开头那段地址，例如http://localhost:3000/，然后
      * 我们在调用接口的时候，就可以全局使用/api，这时候/api的作用就相当
-     * 于http://localhost:54321/，比如接口的地址是http://localhost:54321/api/json.data，
+     * 于http://localhost:3000/，比如接口的地址是http://localhost:3000/api/json.data，
      * 我们就可以使用/api/json.data
      * 2、那pathRewrite是用来干嘛的呢，这里的作用，相当于是替代/api，如果接口中是没有api的，那就直接置空，如果接口中有api，那就得写成{^/api:/api}，可以理解为一个重定向或者重新赋值的功能。
      */

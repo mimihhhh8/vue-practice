@@ -3,9 +3,7 @@ let express = require('express')
 let app = express()
 
 app.get('/user', (req, res) => {
-  // res.setHeader('Access-Control-Allow-Origin', '*')
-  // res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
-  // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization')
+  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080')
 
   res.json({
     'message': '获取成功',
