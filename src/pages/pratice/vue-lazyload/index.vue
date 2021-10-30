@@ -6,12 +6,12 @@
    <div v-for="(item,index) in imgList" :key="index" class="m-box1">
     <img v-lazy="item.imgUrl" alt="" class="img-style">
    </div>
-   <div v-for="(item,index) in imgList" :key="index" class="m-box2">
+   <!-- <div v-for="(item,index) in imgList" :key="index" class="m-box2">
     <img v-lazy="item.imgUrl" alt="" class="img-style">
    </div>
    <div v-for="(item,index) in imgList" :key="index" class="m-box3">
     <img v-lazy="item.imgUrl" alt="" class="img-style">
-   </div>
+   </div> -->
 </div>
 </template>
 <script>
