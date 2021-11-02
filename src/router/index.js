@@ -5,15 +5,16 @@ import Router from 'vue-router'
 const Index = () => import('@/pages/index')
 const Home = () => import('@/pages/home')
 const NotFound = () => import('@/pages/404')
-const Errorhandler = () => import('@/pages/errorhandler/errorhandler.vue')// 错误捕获
+const Errorhandler = () => import('@/pages/errorhandler/errorhandler.vue') // 错误捕获
 const vIf = () => import('@/pages/vue指令/v-if&v-for')
-const LazyLoad = () => import('@/pages/pratice/vue-lazyload')// 图片懒加载
-const CssCharacter = () => import('@/pages/pratice/css3特性')// css3特性
-const ParentChild = () => import('@/pages/pratice/父组件监听子组件生命周期')// 父组件监听子组件生命周期
-const PxToVw = () => import('@/pages/pratice/px转vw实现页面自适应')// px转vw实现页面自适应
-const Copy = () => import('@/pages/pratice/javascript中的深拷贝和浅拷贝')// javascript中的深拷贝和浅拷贝
+const LazyLoad = () => import('@/pages/pratice/vue-lazyload') // 图片懒加载
+const CssCharacter = () => import('@/pages/pratice/css3特性') // css3特性
+const ParentChild = () => import('@/pages/pratice/父组件监听子组件生命周期') // 父组件监听子组件生命周期
+const PxToVw = () => import('@/pages/pratice/px转vw实现页面自适应') // px转vw实现页面自适应
+const Copy = () => import('@/pages/pratice/javascript中的深拷贝和浅拷贝') // javascript中的深拷贝和浅拷贝
 const Task = () => import('@/pages/ms/2021-5-22/宏任务微任务')
 const Cross = () => import('@/pages/跨域/cross')
+const Scroll = () => import('@/pages/pratice/vue全屏滚动')
 Vue.use(Router)
 
 export default new Router({
@@ -73,6 +74,11 @@ export default new Router({
           path: '/cross',
           name: 'Cross',
           component: Cross
+        },
+        {
+          path: '/scroll',
+          name: 'Scroll',
+          component: Scroll
         }
       ]
     },

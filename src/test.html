@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    *{padding: 0;margin: 0;}
+    li{list-style: none;}
+    #menu{height: 50px;position: fixed;left: 0;top: 0;z-index: 20;}
+    #menu li{float: left;width: 100px;height: 50px;line-height: 50px;text-align: center;background: #000;}
+    #menu li a{color: #fff;text-decoration: none;}
+    #menu .active a{color: #31B0D5}   
+</style>  
+<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>     <!--fullpage依赖jQuery文件-->
+<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script> 
+<script>
+  $(function(){
+      $("#content").fullpage({
+          sectionsColor:["#caf9a3","#90ac32","#ac932a"],
+          anchors:["page1","page2","page3"],   //注意不带#
+          menu:"#menu"    //绑定菜单，data-menuanchor,才能使用.active
+      })
+  })
+</script>
+</head>
+<body>
+  <div>
+    <ul id="menu">
+      <li data-menuanchor="page1" class="active"><a href="#page1">第1屏</a></li>
+      <li data-menuanchor="page2"><a href="#page2">第2屏</a></li>
+      <li data-menuanchor="page3"><a href="#page3">第3屏</a></li>
+  </ul>
+  <div id="content">
+      <div class="section">
+          第一屏的内容
+      </div>
+      <div class="section">
+          第二屏内容
+      </div>
+      <div class="section">
+          第三屏内容
+      </div>
+  </div>
+  </div>
+</body>
+</html>

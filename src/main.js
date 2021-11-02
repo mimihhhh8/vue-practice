@@ -10,7 +10,11 @@ import '@/utils/compatible'
 import '@/instances/antdesign'
 import '@/style/base.css'
 
-import VueLazyLoad from 'vue-lazyload'// 图片懒加载
+import VueLazyLoad from 'vue-lazyload'
+
+// 全屏滚动 vue-fullpage.js
+import 'fullpage.js/vendors/scrolloverflow'
+import VueFullpage from 'vue-fullpage.js'// 图片懒加载
 
 Vue.prototype.$API = $API
 window.$CONFIG = $CONFIG
@@ -21,6 +25,7 @@ Vue.use(VueLazyLoad, {
   error: './static/lazyLoadImg/pic12.jpg',
   loading: './static/lazyLoadImg/pic2.jpg'
 })
+Vue.use(VueFullpage)
 
 new Vue({
   el: '#app',

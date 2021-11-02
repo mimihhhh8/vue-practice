@@ -36,10 +36,11 @@ export default {
         {label: '4、css3特性', path: '/csscharacter'},
         {label: '5、父组件监听子组件生命周期', path: '/parentchild'},
         {label: '6、px转vw实现页面自适应', path: '/pxtovw'},
-        {label: '6、javascript中的深拷贝和浅拷贝', path: '/copy'},
-        {label: '7、ms', path: '/task'},
-        {label: '3、组件传值', path: '/vif'}, // 兄弟组件传值
-        {label: '跨域', path: '/cross'}// 兄弟组件传值
+        {label: '7、javascript中的深拷贝和浅拷贝', path: '/copy'},
+        {label: '8、ms', path: '/task'},
+        {label: '9、组件传值', path: '/vif'}, // 兄弟组件传值
+        {label: '10、跨域', path: '/cross'},
+        {label: '10、vue全屏滚动', path: '/scroll'}// vue全屏滚动
       ]
     }
   },
