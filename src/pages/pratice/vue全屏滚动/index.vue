@@ -2,9 +2,9 @@
     <div>
         <full-page :options="options" ref="fullpage">
            <ul id="menu">
-              <li data-menuanchor="page1" class="active"><a href="#page1">第1屏</a></li>
-              <li data-menuanchor="page2"><a href="#page2">第2屏</a></li>
-              <li data-menuanchor="page3"><a href="#page3">第3屏</a></li>
+              <li  @click="handleMove(index)" :data-menuanchor="item.value" :class="index===0 ? 'active' : ''" v-for="(item,index) in menuList" :key="index">
+                <a :href="'#'+item.value">{{item.label}}</a>
+              </li>
           </ul>
           <div id="content">
             <div class="section">
@@ -31,14 +31,35 @@ export default {
         // 是否显示导航，默认为false
         sectionsColor: ['#caf9a3', '#90ac32', '#ac932a'],
         anchors: ['page1', 'page2', 'page3'], // 注意不带#
-        menu: '#menu' // 绑
-      }
+        menu: '#menu', // 绑
+        recordHistory: true
+      },
+      menuList: [
+        {label: '首页', value: 'page1'},
+        {label: '预约注册', value: 'page2'},
+        {label: '游戏特色', value: 'page3'}
+      ]
     }
   },
+
+  mounted () {
+    this.$refs.fullpage.api.setLockAnchors(true)
+  },
+
   methods: {
-    next () {
-      // 向下滚动一页
-      this.$refs.fullpage.api.moveSectionDown()
+
+    handleMove (index) {
+      switch (index) {
+        case 0:
+          this.$refs.fullpage.api.moveTo(1, 0)
+          break
+        case 1:
+          this.$refs.fullpage.api.moveTo(2, 1)
+          break
+        case 2:
+          this.$refs.fullpage.api.moveTo(3, 2)
+          break
+      }
     }
   }
 }

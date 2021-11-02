@@ -79,7 +79,23 @@ export default new Router({
           path: '/scroll',
           name: 'Scroll',
           component: Scroll
+        },
+        {
+          path: '/page1',
+          name: 'Page1',
+          component: Scroll
+        },
+        {
+          path: '/page2',
+          name: 'Page2',
+          component: Scroll
+        },
+        {
+          path: '/page3',
+          name: 'Page3',
+          component: Scroll
         }
+
       ]
     },
     {
