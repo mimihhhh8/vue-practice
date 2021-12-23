@@ -15,6 +15,7 @@ import VueLazyLoad from 'vue-lazyload'
 // 全屏滚动 vue-fullpage.js
 import 'fullpage.js/vendors/scrolloverflow'
 import VueFullpage from 'vue-fullpage.js'// 图片懒加载
+import 'swiper/swiper.min.css'
 
 Vue.prototype.$API = $API
 window.$CONFIG = $CONFIG

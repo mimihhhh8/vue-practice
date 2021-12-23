@@ -40,7 +40,8 @@ export default {
         {label: '8、ms', path: '/task'},
         {label: '9、组件传值', path: '/vif'}, // 兄弟组件传值
         {label: '10、跨域', path: '/cross'},
-        {label: '10、vue全屏滚动', path: '/scroll'}// vue全屏滚动
+        {label: '11、vue全屏滚动', path: '/scroll'}, // vue全屏滚动
+        {label: '12、swiper轮播图', path: '/swiper'} // 轮播图
       ]
     }
   },

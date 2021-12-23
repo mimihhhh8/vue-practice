@@ -15,6 +15,7 @@ const Copy = () => import('@/pages/pratice/javascript中的深拷贝和浅拷贝
 const Task = () => import('@/pages/ms/2021-5-22/宏任务微任务')
 const Cross = () => import('@/pages/跨域/cross')
 const Scroll = () => import('@/pages/pratice/vue全屏滚动')
+const Swiper = () => import('@/pages/pratice/swiper')
 Vue.use(Router)
 
 export default new Router({
@@ -94,6 +95,11 @@ export default new Router({
           path: '/page3',
           name: 'Page3',
           component: Scroll
+        },
+        {
+          path: '/swiper',
+          name: 'Swiper',
+          component: Swiper
         }
 
       ]
