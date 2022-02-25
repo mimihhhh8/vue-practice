@@ -10,5 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+body{
+  min-width: 1200PX;
+  overflow-x: hidden;
+}
+@import "./common.css";
 </style>

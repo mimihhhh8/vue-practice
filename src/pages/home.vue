@@ -42,7 +42,8 @@ export default {
         {label: '10、跨域', path: '/cross'},
         {label: '11、vue全屏滚动', path: '/scroll'}, // vue全屏滚动
         {label: '12、swiper轮播图', path: '/swiper'}, // 轮播图
-        {label: '13、前端知识储备', path: '/knowledge'}
+        {label: '13、前端知识储备', path: '/knowledge'},
+        {label: '14、响应式布局', path: '/layout'}
       ]
     }
   },

@@ -17,6 +17,7 @@ const Cross = () => import('@/pages/跨域/cross')
 const Scroll = () => import('@/pages/pratice/vue全屏滚动')
 const Swiper = () => import('@/pages/pratice/swiper')
 const Knowledge = () => import('@/pages/前端知识储备/index.vue')
+const Layout = () => import('@/pages/响应式布局/index.vue')
 Vue.use(Router)
 
 export default new Router({
@@ -106,6 +107,11 @@ export default new Router({
           path: '/knowledge',
           name: 'Knowledge',
           component: Knowledge
+        },
+        {
+          path: '/layout',
+          name: 'Layout',
+          component: Layout
         }
 
       ]
