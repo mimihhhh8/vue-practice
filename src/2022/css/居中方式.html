@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- https://github.com/pingan8787/Leo_CSS/blob/master/article/1-%E5%90%84%E7%A7%8DCSS%E5%B1%85%E4%B8%AD%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86.md -->
+  <style>
+    .main {
+      width: 400px;
+      height: 200px;
+      background: pink;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: hotpink;
+    }
+
+    .box1 {
+      margin: 0 auto;
+    }
+
+    .textspan {
+      text-align: center;
+    }
+
+    .main4 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .box4 {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1、把margin设置为auto -->
+  <div class="main">
+    <div class="box box1"></div>
+  </div>
+
+  <!-- 2、使用text-align:center使得文字水平居中，使用line-height单行文字垂直居中 -->
+  <div class="main">
+    <p class="textspan">这是一段水平居中的文字</p>
+  </div>
+  <br>
+  <!-- 3、使用表格：td或th可以使用 align="center"以及valign="middle"实现水平和垂直居中 -->
+
+  <!-- 4、使用display:table-cell来居中 -->
+  <div class="main main4">
+    <div class="box box4"></div>
+  </div>
+
+  <br>
+  <label class="bui-radios-label bui-radios-anim">
+    <input type="radio" name="sex" /><i class="bui-radios"></i> 男
+  </label>
+  <label class="bui-radios-label bui-radios-anim">
+    <input type="radio" checked="" name="sex" /><i class="bui-radios"></i> 女
+  </label>
+</body>
+
+</html>
